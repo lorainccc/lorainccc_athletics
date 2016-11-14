@@ -52,7 +52,7 @@ get_header(); ?>
             <div class="small-12 medium-12 large-12 columns page-desription">
                 <?php
                 $args = array(
-                    'pagename' => 'mens-and-womens-varsity-cross-country',
+                    'pagename' => $currentcatslug,
                 );
                 $query = new WP_Query( $args );
                 // The Loop
