@@ -19,14 +19,14 @@ get_header(); ?>
 	<h3><?php echo bloginfo('the-title'); ?></h3>
 		</div>
 	<?php	if ( has_nav_menu( 'left-nav' ) ) : ?>
-	<div id="secondary" class="secondary">
+	<div id="secondary" class="medium-12 columns secondary nopadding">
 		<?php if ( has_nav_menu( 'left-nav' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
 					// Primary navigation menu.
 					wp_nav_menu( array(
 						'menu_class'     => 'nav-menu',
-						'theme_location' => 'left-nav',
+						'theme_location' => 'athletics-left-nav',
 					) );
 				?>
 			</nav><!-- .main-navigation -->
@@ -40,7 +40,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-           <header class="page-header">
+           <header class="page-header" style="padding: 0;">
                <?php
                     echo '<h1 class="page-title">'.single_cat_title( '', false ).'</h1>';
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
