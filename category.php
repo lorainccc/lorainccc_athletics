@@ -46,25 +46,11 @@ get_header(); ?>
 	<div class="small-12 medium-12 large-12 columns sidebar-widget">
 		<div class="small-12 medium-12 large-12 columns sidebar-menu-header">
 	 <h3>
-			<?php 
-							$current = $post->ID;
-							
-							$parent = $post->post_parent;
-							
-							$parent_post = get_post($parent);
-							$parent_slug = $parent_post->post_name;
-							
-							$parent_id = $parent_post->ID;
-
-							$grandparent_id = $parent_post->post_parent;
-
-							$grandparent_post = get_post($grandparent_id);
-							$grandparent_slug = $grandparent_post->post_name;
-							
-			?>
-    <?php if ($root_parent = get_the_title($grandparent_id) !== $root_parent = get_the_title($current)) {echo get_the_title($grandparent_id); }else {echo get_the_title($parent); }
-			?>
-			</h3>
+					<?php 
+								$blog_title = get_bloginfo(); 
+								echo $blog_title;
+				?>		
+	</h3>
 		<?php 
 			//echo 'current-> ' . $current . ' slug-> ' . $post->post_name . '<br />';
 			//echo 'parent-> ' . $parent_id . ' slug-> ' . $parent_slug  . '<br />';
