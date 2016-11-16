@@ -79,131 +79,37 @@ get_header(); ?>
 	<div class="small-12 medium-8 large-8 columns">		
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
+	<?php if ( have_posts() ) : ?>
+
 			<header class="page-header">
 				<?php
-					echo '<h1 class="page-title">'.single_cat_title('',false).'</h1>';
+				echo '<h1 class="page-title">'.single_cat_title('', false).'</h1>';
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
- <div class="small-12 medium-12 large-12 columns page-desription">
-                <?php
-																    // get category slug in wordpress
-    										if ( is_single() ) {
-        								$cats =  get_the_category();
-        								$cat = $cats[0];
-    										} else {
-        										$cat = get_category( get_query_var( 'cat' ) );
-    										}
-    												$cat_slug = $cat->slug;
-    												echo $cat_slug;
-														
-                $args = array(
-                    'pagename' => $cat_slug,
-                );
-                $query = new WP_Query( $args );
-                // The Loop
-                if ( $query->have_posts() ) {
-                    while ( $query->have_posts() ) {
-                        $query->the_post();
-                        echo '<p>' . get_the_content() . '</p>';
-                    }
-                    /* Restore original Post Data */
-                    wp_reset_postdata();
-                } else {
-                    // no posts found
-                }
-                ?>
-            
-            </div>
-            <div class="small-12 medium-12 large-12 columns annoucments">
-                <?php
-                $lcccargs = array(
-                    'post_type' => 'lccc_announcement',
-                    'orderby' => 'date',
-																				'order' => 'DESC',
-                    'posts_per_page' => -1,
-                );
-                $lcccquery = new WP_Query( $lcccargs );
-                // The Loop
-                if ( $lcccquery->have_posts() ) {
-                    while ( $lcccquery->have_posts() ) {
-                        $lcccquery->the_post();
-                        $subheading = announcement_meta_box_get_meta('announcement_meta_box_sub_heading');
-                        ?>
-                
-                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="small-12 medium-12 large-12 columns">
-<a href="<?php the_permalink();?>"><?php the_title( '<h2 class="entry-title">', '</h2>' ); ?></a>
-		<h3><?php echo $subheading; ?></h3>
- </div>
-	<?php  if ( has_post_thumbnail() ) { ?>
-			<div class="small-12 medium-4 large-4 columns">
-							<?php the_post_thumbnail(); ?>
-			</div>
-			<div class="small-12 medium-8 large-8 columns" style="padding-top: 0.3rem;">
-		<header class="entry-header">
-        <?php the_category( ', ' ); ?>
-        <p>&nbsp;</p>
-	</header><!-- .entry-header -->
-	<div class="small-12 medium-12 large-12 columns nopadding">
-	<div class="entry-content">
-		<?php
-			the_excerpt();
-		?>
-		      <a href="<?php the_permalink();?>">More Information</a>
-		</div><!-- .entry-content -->	
-			</div>
-					</div>
-	<?php }else{ ?>
-	<div class="small-12 medium-12 large-12 columns">
-	<header class="entry-header">
-        <?php the_category( ', ' ); ?>
-        <p>&nbsp;</p>
-       
-	</header><!-- .entry-header -->
-	</div>
-	
-	<div class="small-12 medium-12 large-12 columns">
-			<div class="entry-content">
-		<?php
-			the_excerpt();
-		?>
-		 <a href="<?php the_permalink();?>">More Information</a>
-	</div><!-- .entry-content -->
-</div>
-	<?php } ?>
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-	<?php if ( get_edit_post_link() ) : ?>
-		<div class="small-12 medium-12 large-12 columns">
-			<p>&nbsp;</p>
-			<?php
-				edit_post_link(
-					sprintf(
-						/* translators: %s: Name of current post */
-						esc_html__( 'Edit This Announcment  %s', 'lorainccc' ),
-						the_title( '<span class="screen-reader-text">"', '"</span>', false )
-					),
-					'<span class="edit-link">',
-					'</span>'
-				);
-			?>
-				</div>
-	<?php endif; ?>
-</article><!-- #post-## -->
-<div class="column row">
+				<?php
+					/* Include the Post-Format-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					 */
+					get_template_part( 'template-parts/content', 'post-list' );
+				?>
+				<div class="column row">
         <hr>
       </div>
-                
-                <?php
-                    }
-                    the_posts_navigation();
-                    /* Restore original Post Data */
-                    wp_reset_postdata();
-                } else {
-                    // no posts found
-                }
-                ?> 
-            </div>
+			<?php endwhile; ?>
+
+			<?php the_posts_navigation(); ?>
+
+		<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
