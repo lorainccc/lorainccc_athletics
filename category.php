@@ -119,9 +119,6 @@ get_header(); ?>
                 <?php
                 $lcccargs = array(
                     'post_type' => 'lccc_announcement',
-                    'post_status' => 'publish',
-																				'taxonomy'	=> 'category',
-																				'term'	=> $cat_slug,
                     'orderby' => 'date',
 																				'order' => 'DESC',
                     'posts_per_page' => -1,
