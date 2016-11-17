@@ -146,7 +146,7 @@ Section 5: Navigation
 div.nav-links div.nav-next{width:50%;display:block;float:right;text-align:right}@media only screen and (max-width:40em){div.nav-links div.nav-next,div.nav-links div.nav-previous{width:100%;padding-bottom:1rem}
 }.main-navigation li{box-shadow:none;position:relative;min-height:40px;padding-left:.5rem;padding-top:.3rem}
 .main-navigation .nav-menu>ul>li:first-child,.main-navigation .nav-menu>li:first-child{border-top:0}
-@media screen and (min-width:40em){header{padding-top:1.5rem}}@media screen and (min-width:1074px){nav.menu-centered{height:36px}
+@media screen and (max-width:40em){header{padding-top:1.5rem}}@media screen and (min-width:1074px){nav.menu-centered{height:36px}
 }header nav a,header nav a:hover{color:#fefefe;font-size:.875rem;font-weight:600}
 header ul#header-menu li a{font-size:.78125rem;color:#0055a5;font-weight:700}header .menu:not(#header-menu):not(.vertical) li:hover,header .dropdown.menu .submenu{background:#0c3b78;border:0}
 header li.is-submenu-item{padding:.5rem 0;border-top:1px solid #0055a5}header .submenu{margin-top:-1px}
