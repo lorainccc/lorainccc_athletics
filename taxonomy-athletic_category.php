@@ -100,8 +100,9 @@ get_header(); ?>
             if ( $page )
             {
                 echo $page[0]->post_content;
-            }
+           
             echo '<br/>'.'<h2 class="announcementheader">'.'News And Announcements'.'</h2>'.'<br/>';
+             }    
             ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
