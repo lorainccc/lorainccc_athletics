@@ -14,7 +14,6 @@ get_header();
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-  <div class="small-12 medium-12 large-12 columns">
 			<?php if ( is_active_sidebar( 'athletics-slider-sidebar' ) ) { ?>
 			<div class="small-12 medium-12 large-12 columns nopadding">
 						<?php dynamic_sidebar( 'athletics-slider-sidebar' ); ?>
@@ -28,28 +27,25 @@ get_header();
   <?php } ?>
 			
 			<section class="row">
-   	<div class="small-12 medium-7 large-8 columns athletics-news">
-		<?php if ( is_active_sidebar( 'lccc-announcements-sidebar' ) ) { ?>
-						<?php dynamic_sidebar( 'lccc-announcements-sidebar' ); ?>
-				<?php } ?>
-				
-				</div>
-				<div class="small-12 medium-5 large-4 columns">
-										<div class="small-12 medium-12 large-12 columns nopadding">
-											<?php if ( is_active_sidebar( 'lccc-events-sidebar' ) ) { ?>
-																	<?php dynamic_sidebar( 'lccc-events-sidebar' ); ?>
-												<?php } ?>				
-										</div>											<div class="small-12 medium-12 large-12 columns stocker-badges-container">
-											<?php if ( is_active_sidebar( 'badges-sidebar' ) ) { ?>
-																	<?php dynamic_sidebar( 'badges-sidebar' ); ?>
-												<?php } ?>								
+				<div class="small-12 medium-12 large-12 columns">
+										<div class="small-12 medium-7 large-8 columns athletics-news">
+												<?php if ( is_active_sidebar( 'lccc-announcements-sidebar' ) ) { ?>
+																<?php dynamic_sidebar( 'lccc-announcements-sidebar' ); ?>
+												<?php } ?>
 										</div>
-				
-				</div>				
-  </section>	
-		</div>	
-		<div class="small-12 medium-12 large-12 columns">	
-							<?php if ( is_active_sidebar( 'sponsor-sidebar' ) ) { ?>
+										<div class="small-12 medium-5 large-4 columns">
+																<div class="small-12 medium-12 large-12 columns nopadding">
+																	<?php if ( is_active_sidebar( 'lccc-events-sidebar' ) ) { ?>
+																							<?php dynamic_sidebar( 'lccc-events-sidebar' ); ?>
+																		<?php } ?>				
+																</div>											<div class="small-12 medium-12 large-12 columns stocker-badges-container">
+																	<?php if ( is_active_sidebar( 'badges-sidebar' ) ) { ?>
+																							<?php dynamic_sidebar( 'badges-sidebar' ); ?>
+																		<?php } ?>								
+																</div>
+										</div>				
+					</div>
+								<?php if ( is_active_sidebar( 'sponsor-sidebar' ) ) { ?>
 						<div class="small-12 medium-12 large-12 columns">
 											<div class="column row">
 													<hr />
@@ -61,7 +57,9 @@ get_header();
 											</div>
 							</div>
 							<?php } ?>
-			</div>
+				
+			</section>	
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
