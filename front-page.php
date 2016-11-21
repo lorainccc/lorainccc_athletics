@@ -46,7 +46,7 @@ get_header();
 										</div>				
 					</div>
 								<?php if ( is_active_sidebar( 'sponsor-sidebar' ) ) { ?>
-						<div class="small-12 medium-12 large-12 columns">
+						<div class="small-12 medium-12 large-12 columns sponsors-row">
 											<div class="column row">
 													<hr />
 											</div>
