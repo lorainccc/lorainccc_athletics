@@ -31,6 +31,19 @@ get_header();
 		<?php if ( is_active_sidebar( 'lccc-announcements-sidebar' ) ) { ?>
 						<?php dynamic_sidebar( 'lccc-announcements-sidebar' ); ?>
 				<?php } ?>
+					<?php if ( is_active_sidebar( 'sponsor-sidebar' ) ) { ?>
+		<div class="small-12 medium-12 large-12 columns">
+							<div class="column row">
+									<hr />
+							</div>
+							<div class="column row">
+										<div class="small-12 medium-12 large-12 columns sponsors-row">
+											<?php dynamic_sidebar( 'sponsor-sidebar' ); ?>
+										</div> 
+							</div>
+			</div>
+			<?php } ?>			
+				
 				</div>
 				<div class="small-12 medium-5 large-4 columns">
 										<div class="small-12 medium-12 large-12 columns nopadding">
@@ -45,18 +58,7 @@ get_header();
 				
 				</div>				
   </section>		
-			<?php if ( is_active_sidebar( 'sponsor-sidebar' ) ) { ?>
-		<div class="small-12 medium-12 large-12 columns">
-							<div class="column row">
-									<hr />
-							</div>
-							<div class="column row">
-										<div class="small-12 medium-12 large-12 columns sponsors-row">
-											<?php dynamic_sidebar( 'sponsor-sidebar' ); ?>
-										</div> 
-							</div>
-			</div>
-			<?php } ?>			
+		
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
