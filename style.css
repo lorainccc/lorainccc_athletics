@@ -145,7 +145,8 @@ a.skip-link.screen-reader-text:focus{position:static;width:auto;height:auto}.ql-
 /*!
 Section 5: Navigation
 */div.nav-links div.nav-previous{width:50%;display:block;float:left;text-align:left}
-div.nav-links div.nav-next{width:50%;display:block;float:right;text-align:right}@media only screen and (max-width:40em){div.nav-links div.nav-next,div.nav-links div.nav-previous{width:100%;padding-bottom:1rem}
+div.nav-links div.nav-next{width:50%;display:block;float:right;text-align:right}div.header-menu-widgets ul.menu li a:hover{background:#fff}
+@media only screen and (max-width:40em){div.nav-links div.nav-next,div.nav-links div.nav-previous{width:100%;padding-bottom:1rem}
 }.main-navigation li{box-shadow:none;position:relative;min-height:40px;padding-left:.5rem;padding-top:.3rem}
 .main-navigation .nav-menu>ul>li:first-child,.main-navigation .nav-menu>li:first-child{border-top:0}
 @media screen and (max-width:40em){header{padding-top:1.5rem}}@media screen and (min-width:1074px){nav.menu-centered{height:36px}
