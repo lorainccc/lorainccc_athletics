@@ -14,7 +14,8 @@ get_header();
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-  <?php if ( is_active_sidebar( 'athletics-slider-sidebar' ) ) { ?>
+  <div class="small-12 medium-12 large-12 columns">
+			<?php if ( is_active_sidebar( 'athletics-slider-sidebar' ) ) { ?>
 			<div class="small-12 medium-12 large-12 columns nopadding">
 						<?php dynamic_sidebar( 'athletics-slider-sidebar' ); ?>
 			</div>
@@ -25,24 +26,12 @@ get_header();
 			</div>
   </div>
   <?php } ?>
-
+			
 			<section class="row">
    	<div class="small-12 medium-7 large-8 columns athletics-news">
 		<?php if ( is_active_sidebar( 'lccc-announcements-sidebar' ) ) { ?>
 						<?php dynamic_sidebar( 'lccc-announcements-sidebar' ); ?>
 				<?php } ?>
-					<?php if ( is_active_sidebar( 'sponsor-sidebar' ) ) { ?>
-		<div class="small-12 medium-12 large-12 columns">
-							<div class="column row">
-									<hr />
-							</div>
-							<div class="column row">
-										<div class="small-12 medium-12 large-12 columns sponsors-row">
-											<?php dynamic_sidebar( 'sponsor-sidebar' ); ?>
-										</div> 
-							</div>
-			</div>
-			<?php } ?>			
 				
 				</div>
 				<div class="small-12 medium-5 large-4 columns">
@@ -57,8 +46,22 @@ get_header();
 										</div>
 				
 				</div>				
-  </section>		
-		
+  </section>	
+		</div>	
+		<div class="small-12 medium-12 large-12 columns">	
+							<?php if ( is_active_sidebar( 'sponsor-sidebar' ) ) { ?>
+						<div class="small-12 medium-12 large-12 columns">
+											<div class="column row">
+													<hr />
+											</div>
+											<div class="column row">
+														<div class="small-12 medium-12 large-12 columns sponsors-row">
+															<?php dynamic_sidebar( 'sponsor-sidebar' ); ?>
+														</div> 
+											</div>
+							</div>
+							<?php } ?>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
