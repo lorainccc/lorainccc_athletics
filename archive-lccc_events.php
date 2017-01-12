@@ -140,7 +140,7 @@ get_header(); ?>
 			<div class="taxonomies">
 				<?php echo get_the_term_list( $post->ID, 'event_categories','', ' , ' , ''); ?>
 			</div>
-			<p><?php echo 'Date: '.$eventstartmonthfull.' '.$eventstartday.' , '.$eventstartyear; ?></p>
+			<p><?php echo 'Date: '.$eventstartmonthfull.' '.$eventstartday.', '.$eventstartyear; ?></p>
         		<p><?php echo 'Time: '.$starttime; ?></p>
           		<p><?php echo 'Location: '.$location; ?></p>
         		<p><?php echo 'Cost: '.$cost; ?></p>
