@@ -13,7 +13,12 @@ $subheading = announcement_meta_box_get_meta('announcement_meta_box_sub_heading'
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="small-12 medium-12 large-12 columns">
    				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+     <?php 
+     if($subheading != ''){ ?>
 							<h3><?php echo $subheading; ?></h3>
+     <?php
+     }
+     ?>
     </div>
 	<div class="small-12 medium-12 large-12 columns">
 	<header class="entry-header">
