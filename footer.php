@@ -14,8 +14,8 @@
     <div class="large-4 medium-4 columns"><a href="http://www.lorainccc.edu/"><img class="footer-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="" width="220" height="42.5"/></a>
       <h2>Connect with LCCC</h2>
       <ul class="menu footer-sm-links">
-        <li><a href="https://www.facebook.com/LCCCAthletics" title="Follow LCCC Athletics on Facebook" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/facebook_white.svg" height="30" width="30" alt="Follow LCCC Athletics on Facebook" /></a></li>
-        <li><a href="https://twitter.com/lcccathletics" target="_blank" title="Follow LCCC Athletics on Twitter"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/twitter_white.svg" height="30" width="30" alt="Follow LCCC Athletics on Twitter" /></a></li>
+        <li><a href="https://www.facebook.com/LCCCAthletics" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/facebook_white.svg" height="30" width="30" alt="" /></a></li>
+        <li><a href="https://twitter.com/lcccathletics " target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/twitter_white.svg" height="30" width="30" alt="" /></a></li>
       </ul>
       <a href="/campus-technology/lccc-mobile/" title="Download LCCC's Mobile App" target="_blank" class="clearfix mobile-app-link"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/smartphone_yellow.svg" heigth="33" width="20" alt=""/>
       <h2>LCCC'S<br />
@@ -43,13 +43,13 @@
 								or (440) 365-5222<br>
 				<?php }
 				if($footer_contact_email != ''){?>
-				<a class="underline" href="mailto:<?php echo $footer_contact_email; ?>" title="Contact LCCC Athletics for more information"><?php echo $footer_contact_email; ?></a>
+				<a class="underline" href="mailto:<?php echo $footer_contact_email; ?>"><?php echo $footer_contact_email; ?></a>
 				<?php }else {?>
-					<a class="underline" href="mailto:info@lorainccc.edu" title="Contact LCCC for more information">info@lorainccc.edu</a>
+					<a class="underline" href="mailto:info@lorainccc.edu">info@lorainccc.edu</a>
 					<?php } ?>
 								</p>
         <ul class="underline">
-        <li><a href="/about/map-and-directions-to-lccc/" title="Map and Directions to LCCC">Map and Directions</a></li>
+        <li><a href="/about/map-and-directions-to-lccc/">Map and Directions</a></li>
       </ul>
     </div>
     <div class="large-4 medium-4 columns">
