@@ -67,13 +67,7 @@ h1.entry-title{line-height:110%;margin-top:.25rem;font-size:2.1875rem}.event-dat
 .lccc_event_header{background:#0c3b78;color:#fefefe;margin-top:0;padding:0 0 .5rem 1.5rem}
 #home-news h2.headertext{margin:0}.home-hero{width:100%;background-image:url(/wp-content/themes/lorainccc/images/lccc_diningbookstore.jpg);background-position:center center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover;height:450px}
 .hero-image{width:100%;background-position:center center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
-.gateway{background-image:url(/wp-content/themes/lorainccc/images/lccc_diningbookstore.jpg)}figure{margin:0;padding:0}
-.gallery{margin:0 auto 18px;display:inline-block;width:100%}.gallery .gallery-item{float:left;margin-top:0;text-align:center;width:33%}
-.gallery-columns-2 .gallery-item{width:50%}.gallery-columns-3 .gallery-item{width:33%}
-.gallery-columns-4 .gallery-item{width:25%}.gallery img{padding:8px}.gallery img:hover{background:white}
-.gallery-columns-2 .attachment-medium{max-width:92%;height:auto}.gallery-columns-3 .attachment-thumbnail{max-width:90%;height:auto}
-.gallery-columns-4 .attachment-thumbnail{max-width:84%;height:auto}
-.gallery dl,.gallery dt{margin:0}.gallery br+br{display:none}.white-panel{padding:2rem 2rem 4rem 2rem;background:rgba(255,255,255,0.9)}
+.gateway{background-image:url(/wp-content/themes/lorainccc/images/lccc_diningbookstore.jpg)}.white-panel{padding:2rem 2rem 4rem 2rem;background:rgba(255,255,255,0.9)}
 .orbit-bullets button{height:.5rem;width:.5rem}.orbit-bullets button.is-active{background:#0c3b78}
 .orbit-slide h2{font-size:2.1875rem;color:#0c3b78;line-height:100%}.orbit-slide p{font-size:.75rem}
 .cta-icons{width:100%;background-color:#0055a5;border-width:5px 0;border-style:solid;border-color:#ffc600}
@@ -201,7 +195,8 @@ ul.sub-menu{padding-top:15px}/*! Ryan's Updated Menu Styling */.breadcrumb-conta
 .main-navigation ul ul li{border-top:1px solid #dcdcdc !important;padding-top:.5rem;padding-bottom:.5rem}
 .main-navigation ul ul li a{color:#0055a5 !important}ul{margin-top:0 !important}ul.nav-menu li.current-menu-ancestor,.main-navigation li.current-menu-item{background:#dcdcdc}
 .main-navigation ul>li.current-menu-ancestor>ul>li{border-top:1px solid #fff}.main-navigation ul>li.current-menu-ancestor>ul>li.current-menu-item>a{font-weight:bold}
-#menu-header-shortcuts a:hover{text-decoration:underline}/*!
+#menu-header-shortcuts a:hover{text-decoration:underline}.dropdown .menu-item{z-index:50}
+/*!
 Section 6: Footer
 */footer{margin-top:5rem;background:#0c3b78;padding:2rem 0 4rem 0;font-size:.75rem}
 footer h2{font-size:.75rem;color:#ffc600;text-transform:uppercase;font-weight:700}
@@ -216,7 +211,7 @@ aside.columns{padding-right:0;padding-left:0}.gateway-main,.home-left{padding-ri
 .main-right{padding-left:5rem}aside.columns{padding-right:.9375rem !important;padding-left:.9375rem !important}
 .mobile-app-link img,.mobile-app-link h2{float:left}}@media screen and (min-width:1074px){nav.menu-centered{height:36px}
 }@media only screen and (max-width:40em){div.nav-links div.nav-next,div.nav-links div.nav-previous{width:100%;padding-bottom:1rem}
-}@media screen and (max-width:40em){header{padding-top:1.5rem}}@media screen and (max-width:63.9375em){header.entry-header p{margin-bottom:0;padding:0 1rem}
+}@media screen and (max-width:40em){header{padding-top:1.5rem}}@media screen and (max-width:63.9375em){header.entry-header p{padding:0 1rem}
 }@media screen and (max-width:39.9375em){h1{font-size:1.35rem;line-height:105%}.white-panel{margin-top:3rem}
 .cta-icons{margin-bottom:2rem}.footer-sm-links{width:210px;margin:0 auto 1rem auto}
 .footer-sm-links li a{padding:0}.footer-sm-links li a img{margin:0 .25rem}footer .row .columns{border-bottom:1px solid #5593db;padding:2rem 0 1rem 0}
