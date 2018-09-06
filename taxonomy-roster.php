@@ -126,9 +126,10 @@ get_header(); ?>
 											<?php
 											$args = array(
 												'post_type' => 'lccc_player',
+												'posts_per_page'=> -1,   // this will display all posts on one page
 												'roster' => $term->slug,
 												'orderby'=> 'title', 
-													'order' => 'ASC', 
+												'order' => 'ASC', 
 											);
 											$ccfemalequery = new WP_Query( $args );
 										 if ( $ccfemalequery->have_posts() ) :
