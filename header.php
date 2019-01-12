@@ -39,7 +39,7 @@
           <input type="search" placeholder="Search" name="s" class="float-right"/>
         </label>
       </form>-->
-     <div class="large-9 medium-6 columns searchbox">
+     <div class="large-9 medium-6 columns searchbox hide-for-print">
       <?php the_widget('WP_Widget_Search'); ?>
      </div>
     </div>
