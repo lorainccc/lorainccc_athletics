@@ -17,7 +17,7 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
+	<a class="show-on-focus hide-for-print" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
   <div class="row show-for-small-only mobile-nav-bar">
@@ -28,7 +28,7 @@
       </span> </div>
   </div>
 		  <div class="row show-for-medium">
-    <div class="large-6 medium-6 columns"><a href="<?php echo esc_url( home_url( '' ) ); ?>"><img src="/athletics/wp-content/uploads/sites/8/2016/07/Commodores-Athletics-web-logo.png" height="92" width="400" alt="Lorain County Community College Logo" /></a>  </div>
+    <div class="large-6 medium-6 columns"><a href="<?php echo esc_url( home_url( '' ) ); ?>"><img src="/athletics/wp-content/uploads/sites/8/2016/07/Commodores-Athletics-web-logo.png" height="92" width="400" alt="LCCC Commodores Athletics" /></a>  </div>
     <div class="large-6 medium-6 columns header-menu-widgets">
      									<?php
           wp_nav_menu(array(
@@ -46,8 +46,8 @@
           <input type="search" placeholder="Search" name="s" class="float-right"/>
         </label>
       </form>-->
-     <div class="large-9 medium-6 columns searchbox">
-      <?php get_sidebar(); ?>
+     <div class="large-9 medium-6 columns searchbox hide-for-print">
+      <?php the_widget('WP_Widget_Search'); ?>
      </div>
     </div>
   </div>
@@ -73,4 +73,4 @@
 
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" tabindex="0" class="site-content">
