@@ -185,6 +185,8 @@ function lorainccc_foundation_scripts() {
 	wp_enqueue_style( 'foundation-normalize', get_template_directory_uri() . '/foundation/css/normalize.css' );
 	wp_enqueue_style( 'foundation',  get_template_directory_uri() . '/foundation/css/foundation.css' );
 
+	wp_enqueue_script( 'lc-mobile-nav-js', get_stylesheet_directory_uri() . '/js/mobile-nav.js', array( 'jquery' ), '1', true );
+
 	wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/foundation/js/vendor/foundation.js', array( 'jquery' ), '1', true );
 	wp_enqueue_script( 'foundation-whatinput', get_template_directory_uri() . '/foundation/js/vendor/what-input.js', array( 'jquery' ), '1', true);
 
@@ -339,7 +341,7 @@ function create_athletic_category_hierarchical_taxonomy() {
 
   register_taxonomy('athletic_category',array('lccc_announcement'), array(
     'hierarchical' => true,
-    'label' => $labels,
+    'labels' => $labels,
     'show_ui' => true,
     'show_admin_column' => true,
     'query_var' => true,
@@ -380,11 +382,11 @@ function lccc_athletic_cpt_add_taxonomy_filters() {
 }
 add_action( 'restrict_manage_posts', 'lccc_athletic_cpt_add_taxonomy_filters' );
 
-/*function sb_add_tax_to_api() {
+function sb_add_tax_to_api() {
     $mytax = get_taxonomy( 'athletic-category' );
     $mytax->show_in_rest = true;
 }
-add_action( 'init', 'sb_add_tax_to_api', 30 );*/
+add_action( 'init', 'sb_add_tax_to_api', 30 );
 
 
 $new_athletics_setting = new new_athletics_setting();
