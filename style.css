@@ -49,8 +49,8 @@ p.roster-name{font-size:1rem;font-family:'Raleway',sans-serif}p.table-section-he
 Section 1: Foundation
 *//*!
 Section 2: Content
-*/div.row hr{margin:-80px auto 40px;height:25px;padding:10px 0;width:100%}
-table.roster-table tbody{border-right:1px solid #CCC;border-left:1px solid #CCC;border-bottom:1px solid #CCC}
+*/div.content table thead,table tbody,table tfoot{border:0}
+div.row hr{margin:-80px auto 40px;height:25px;padding:10px 0;width:100%}table.roster-table tbody{border-right:1px solid #CCC;border-left:1px solid #CCC;border-bottom:1px solid #CCC}
 table.roster-table thead tr th{border-right:1px solid #888;text-align:center;color:#fff}
 table.roster-table thead tr{background:#0c3b78;border:1px solid}table.roster-table tbody tr td{text-align:center}
 table.roster-table thead tr th:last-child{border-right:0}table.roster-table tbody tr.section-header{background:#fff;border-bottom:1px solid #CCC;border-top:1px solid #CCC}
