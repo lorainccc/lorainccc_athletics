@@ -55,7 +55,7 @@
     <div class="large-4 medium-4 columns">
       <h2>Quick Links</h2>
 	<?php if ( has_nav_menu( 'athletics-footer-quicklink-nav' ) ) : ?>
-		<nav id="footer-quicklink-nav" class="footer-navigation" role="navigation">
+		<nav id="footer-quicklink-nav" class="footer-navigation" role="navigation" aria-labelledby="menu-footer-quicklinks">
 			<?php
 				// Primary Footer navigation menu.
 				wp_nav_menu( array(
