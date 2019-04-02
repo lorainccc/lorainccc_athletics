@@ -5,7 +5,7 @@ jQuery(document).ready(function( $ ){
 	
 	$('ul.nav-menu li').removeAttr('aria-haspopup');
 	$('ul.nav-menu').removeAttr('aria-expanded');	
-    $('#menu-navigation').removeAttr('aria-expanded');
+    $('#menu-primary-menu').removeAttr('aria-expanded');
     $('ul.nav-menu li').removeAttr('aria-expanded');
     
 });
