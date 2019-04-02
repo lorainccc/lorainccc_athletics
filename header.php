@@ -17,18 +17,18 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="show-on-focus hide-for-print" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
   <div class="row show-for-small-only mobile-nav-bar">
-    <div class="small-8 columns"> <a href="/athletics"><img src="/athletics/wp-content/themes/lorainccc_athletics/images/lccc-commodore-logo-white.png" alt="" width="165" height="31.875" /></a> </div>
-    <div class="small-2 columns clearfix"> <span data-responsive-toggle="mobile-search" data-hide-for="medium"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="" class="float-right" data-toggle/></span> </div>
+    <div class="small-8 columns"> <a href="/athletics"><img src="/athletics/wp-content/themes/lorainccc_athletics/images/lccc-commodore-logo-white.png" alt="Lorain County Community College Logo" width="165" height="31.875" /></a> </div>
+    <div class="small-2 columns clearfix"> <span data-responsive-toggle="mobile-search" data-hide-for="medium"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="Search the LCCC Athletics Website" class="float-right" data-toggle/></span> </div>
     <div class="small-2 columns"> <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
       </span> </div>
   </div>
 		  <div class="row show-for-medium">
-    <div class="large-6 medium-6 columns"><a href="<?php echo esc_url( home_url( '' ) ); ?>"><img src="/athletics/wp-content/uploads/sites/8/2016/07/Commodores-Athletics-web-logo.png" height="92" width="400" alt="LCCC Commodores Athletics" /></a>  </div>
+    <div class="large-6 medium-6 columns"><a href="<?php echo esc_url( home_url( '' ) ); ?>"><img src="/athletics/wp-content/uploads/sites/8/2016/07/Commodores-Athletics-web-logo.png" height="92" width="400" alt="Lorain County Community College Logo" /></a>  </div>
     <div class="large-6 medium-6 columns header-menu-widgets">
      									<?php
           wp_nav_menu(array(
@@ -46,8 +46,8 @@
           <input type="search" placeholder="Search" name="s" class="float-right"/>
         </label>
       </form>-->
-     <div class="large-9 medium-6 columns searchbox hide-for-print">
-      <?php the_widget('WP_Widget_Search'); ?>
+     <div class="large-9 medium-6 columns searchbox">
+      <?php get_sidebar(); ?>
      </div>
     </div>
   </div>
@@ -73,4 +73,4 @@
 
 	</header><!-- #masthead -->
 
-	<div id="content" tabindex="0" class="site-content">
+	<div id="content" class="site-content">
