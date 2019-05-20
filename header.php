@@ -24,7 +24,7 @@
     <div class="small-8 columns"> <a href="/athletics"><img src="/athletics/wp-content/themes/lorainccc_athletics/images/lccc-commodore-logo-white.png" alt="Lorain County Community College Commodores Athletics" width="165" height="31.875" /></a> </div>
     <div class="small-2 columns clearfix"> <button data-responsive-toggle="mobile-search" data-hide-for="medium"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="Toggle LCCC Athletics Website Search" class="float-right" data-toggle/></button> </div>
     <div class="small-2 columns"> <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle></button>
+      <button class="menu-icon" type="button" data-toggle>Toggle Menu</button>
       </span> </div>
   </div>
 		  <div class="row show-for-medium">
