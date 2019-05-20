@@ -14,7 +14,6 @@ get_header();
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <h1 style="visibility:hidden;">Commodores Athletics</h1>
 			<?php if ( is_active_sidebar( 'athletics-slider-sidebar' ) ) { ?>
 			<div class="small-12 medium-12 large-12 columns nopadding">
 						<?php dynamic_sidebar( 'athletics-slider-sidebar' ); ?>
@@ -25,8 +24,8 @@ get_header();
 				&nbsp;
 			</div>
   </div>
+             <h1 style="visibility:hidden;">Commodores Athletics</h1>
   <?php } ?>
-			
 			<section class="row">
 				<div class="small-12 medium-12 large-12 columns">
 										<div class="small-12 medium-7 large-8 columns athletics-news">
