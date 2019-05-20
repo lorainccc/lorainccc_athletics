@@ -20,6 +20,7 @@ get_header();
 			</div>
 			<?php }else{ ?>
 			<div class="home-hero">
+                <h1 style='dispaly: none;'>Commodores Athletics</h1>
     <div class="row">
 				&nbsp;
 			</div>
