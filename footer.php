@@ -17,9 +17,8 @@
         <li><a href="https://www.facebook.com/LCCCAthletics" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/facebook_white.svg" height="30" width="30" alt="Follow LCCC Athletics on Facebook" /></a></li>
         <li><a href="https://twitter.com/lcccathletics " target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/twitter_white.svg" height="30" width="30" alt="Follow LCCC Athletics on Twitter" /></a></li>
       </ul>
-      <a href="/campus-technology/lccc-mobile/" title="Download LCCC's Mobile App" target="_blank" class="clearfix mobile-app-link"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/smartphone_yellow.svg" heigth="33" width="20" alt=""/>
-      <p>LCCC'S<br />
-        Mobile App</p>
+      <a href="/campus-technology/lccc-mobile/" target="_blank" class="clearfix mobile-app-link"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/smartphone_yellow.svg" heigth="33" width="20" alt=""/>
+      <p>LCCC's Mobile App</p>
       </a>
      <?php if($_GET['siteurl'] == ''){ ?>
      <p class="website-feedback">
@@ -55,7 +54,7 @@
     <div class="large-4 medium-4 columns">
       <h2>Quick Links</h2>
 	<?php if ( has_nav_menu( 'athletics-footer-quicklink-nav' ) ) : ?>
-		<nav role="presentation" id="footer-quicklink-nav" class="footer-navigation" role="navigation" aria-labelledby="menu-footer-quicklinks">
+		<nav role="presentation" id="footer-quicklink-nav" class="footer-navigation">
 			<?php
 				// Primary Footer navigation menu.
 				wp_nav_menu( array(
