@@ -21,10 +21,9 @@ get_header();
 			<?php }else{ ?>
 			<div class="home-hero">
     <div class="row">
-				&nbsp;
+				             <h1 style="visibility:hidden;">Commodores Athletics</h1>
 			</div>
   </div>
-             <h1 style="visibility:hidden;">Commodores Athletics</h1>
   <?php } ?>
 			<section class="row">
 				<div class="small-12 medium-12 large-12 columns">
