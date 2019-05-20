@@ -29,7 +29,7 @@ get_header();
 			<section class="row">
 				<div class="small-12 medium-12 large-12 columns">
 										<div class="small-12 medium-7 large-8 columns athletics-news">
-												<h1 style="visibility:hidden;">Commodores Athletics</h1>
+												<h1>Commodores Athletics</h1>
                                                 <?php 
 																$i=0;
 																if(get_option( 'athletics_announcement_feed_count', '' ) != ''){
