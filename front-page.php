@@ -14,13 +14,13 @@ get_header();
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+            <h1 style='dispaly: none;'>Commodores Athletics</h1>
 			<?php if ( is_active_sidebar( 'athletics-slider-sidebar' ) ) { ?>
 			<div class="small-12 medium-12 large-12 columns nopadding">
 						<?php dynamic_sidebar( 'athletics-slider-sidebar' ); ?>
 			</div>
 			<?php }else{ ?>
 			<div class="home-hero">
-                <h1 style='dispaly: none;'>Commodores Athletics</h1>
     <div class="row">
 				&nbsp;
 			</div>
