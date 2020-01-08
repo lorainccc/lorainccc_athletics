@@ -51,7 +51,7 @@
                
                // Single Post - Athletic Roster Posts
                }elseif($post->post_type == 'lccc_player'){
-               echo lccc_breadcrumb() . "<a href='" . trailingslashit(get_bloginfo('url')) . "' title='Return to " . get_bloginfo('name') . " home'>" . get_bloginfo('name') . "</a> > <a href='"  . get_bloginfo('url') . "/athletics/athletic-category/varsity-sports/'>Players</a> > " . get_the_title() ;
+               echo lccc_breadcrumb() . "<a href='" . trailingslashit(get_bloginfo('url')) . "' title='Return to " . get_bloginfo('name') . " home'>" . get_bloginfo('name') . "</a> > <a href='"  . get_bloginfo('url') . "/athletic-category/varsity-sports/'>Players</a> > " . get_the_title() ;
 
 					// Single Post Blog posts	
 					} else {
