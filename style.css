@@ -132,7 +132,10 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;-webkit-box-shadow:
 .callout{margin-top:1rem;margin-bottom:2rem}.callout span{display:block}.callout h2{font-weight:600;font-size:1.25rem}
 .callout .name,.callout .hours-label{font-weight:700}.callout .callout-contact-method{margin-top:1.35rem}
 .callout .map-link{margin-top:4.45rem}div.content-area ul li{margin:0 0 0 10px;font-size:1.1rem}
-.columns.event-date{padding:0}/*!
+.columns.event-date{padding:0}.about-player{font-size:1.2rem;font-weight:600;padding-bottom:3px}
+ul.about-player-stats{list-style:none;border-top:solid 2px #939393;border-left:dashed 2px #939393;padding:9px 0 0 5px;margin:2px 0 15px 0 !important}
+ul.about-player-stats li{margin:0;background:0}ul.about-player-stats li:nth-child(even){background:#e3e3e3}
+/*!
 Section 3: Body
 */body{font-size:1.1rem;font-family:'Open Sans',sans-serif}
 a{color:#007bbf}.sponsors-row{margin-top:4rem}div.columns.view-all-athletics-button{-webkit-box-shadow:none;box-shadow:none}

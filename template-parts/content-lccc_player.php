@@ -51,11 +51,11 @@ switch($sport){
 	<div class="small-12 medium-4 columns"><?php the_post_thumbnail(); ?></div>
     <?php
     } ?>
-    <div class="small-12 medium-8 columns"><span style="font-size:1.2rem;font-weight:600;padding-bottom:3px;border-bottom:solid 2px #939393;">About the player</span>
-    <ul style="list-style: none; border-left: dashed 2px #939393; padding: 0 0 0 5px; margin:2px 0 15px 0!important;">
-     <li style="margin:0;"><b>Player:</b> # <?php echo $jerseynumber; ?></li>
-     <li style="margin:0;"><b>Height:</b> <?php echo $height; ?></li>
-     <li style="margin:0;"><b>Academic Year:</b> <?php 
+    <div class="small-12 medium-8 columns"><span class="about-player">About the player</span>
+    <ul class="about-player-stats">
+     <li><b>Player:</b> # <?php echo $jerseynumber; ?></li>
+     <li><b>Height:</b> <?php echo $height; ?></li>
+     <li><b>Academic Year:</b> <?php 
         switch($year){
             case 'FR':
                 echo 'Freshman';
@@ -71,11 +71,11 @@ switch($sport){
             break;
         }
      ?></li>
-      <li style="margin:0;"><b>Position:</b> <?php echo $position; ?></li>
-      <li style="margin:0;"><b>High School:</b> <?php echo $highschool; ?></li>
-      <li style="margin:0;"><b>Home Town:</b> <?php echo $hometown . ', OH'; ?></li>
-      <li style="margin:0;"><b>Major:</b> <?php echo $acadmajor; ?></li>
-      <li style="margin:0;"><b>Parents:</b> <?php echo $parents; ?></li>
+      <li><b>Position:</b> <?php echo $position; ?></li>
+      <li><b>High School:</b> <?php echo $highschool; ?></li>
+      <li><b>Home Town:</b> <?php echo $hometown . ', OH'; ?></li>
+      <li><b>Major:</b> <?php echo $acadmajor; ?></li>
+      <li><b>Parents:</b> <?php echo $parents; ?></li>
     </ul>
     </div>
     
