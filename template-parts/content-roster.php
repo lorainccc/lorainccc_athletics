@@ -21,6 +21,8 @@
 		$secondaryposition = str_replace('-', ' ', $secondaryposition);
 		$secondaryposition = trim($secondaryposition);
 		
+		$post_id = get_the_ID();
+
 		switch($sport){
 					case 'baseball':
 										$position =	lccc_athletics_player_profile_get_meta('lccc_athletics_player_profile_position_baseball');
@@ -46,7 +48,9 @@
 					<?php echo '<p>'.$jerseynumber.'</p>'; ?>
 	</td>
 	<td>
-					<?php 	the_title( '<p class="roster-name">', '</p>' ); ?>
+		<a href="<?php echo get_permalink($post_id); ?>">
+			<?php 	the_title( '<p class="roster-name">', '</p>' ); ?>
+		</a>
 	</td>
 	<td>
 				<?php 
